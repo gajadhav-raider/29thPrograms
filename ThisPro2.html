@@ -1,0 +1,21 @@
+<script>
+    var name="Rani Erande";
+    function getName()
+    {
+        document.write(this.name+"<br>");//This keyword use in side the function.
+    }
+    getName();
+    var emp_address = {  
+    fullAddress: function() {  
+        return this.company + " " + this.city+" "+this.state;  
+    }  
+}  
+var address = {  
+    company:"Crosss Country",  
+    city:"Pune",  
+    state:"MH",  
+  
+}  
+document.write(emp_address.fullAddress.call(address)+"<br>");//this line is use for Call method
+document.write(emp_address.fullAddress.apply(address)+"<br>");//this line use for apply method
+</script>

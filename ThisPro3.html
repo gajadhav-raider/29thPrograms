@@ -1,0 +1,20 @@
+<script>  
+    var lang="Java";  
+      //This Program Written for bind Method.
+    function lang_name(call)  
+    {  
+      
+        call();  
+    };  
+      
+    var obj={  
+        
+      lang:"JavaScript",  
+      language:function()  
+      {  
+        document.writeln(this.lang+ " is a popular programming language."+"<br>");  
+      }  
+    };  
+    lang_name(obj.language);  
+    lang_name(obj.language.bind(obj));  
+    </script>
